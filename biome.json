@@ -1,0 +1,207 @@
+{
+    "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+    "files": {
+        "ignoreUnknown": true
+    },
+    "vcs": {
+        "enabled": true,
+        "clientKind": "git",
+        "useIgnoreFile": true
+    },
+    "assist": {
+        "actions": {
+            "recommended": true
+        }
+    },
+    "formatter": {
+        "indentStyle": "space",
+        "indentWidth": 4,
+        "lineWidth": 100,
+        "expand": "auto"
+    },
+    "linter": {
+        "rules": {
+            "complexity": {
+                "noArguments": "error",
+                "noBannedTypes": "error",
+                "noCommaOperator": "error",
+                "noExtraBooleanCast": "error",
+                "noForEach": "warn",
+                "noStaticOnlyClass": "warn",
+                "noUselessCatch": "error",
+                "noUselessConstructor": "warn",
+                "noUselessEmptyExport": "warn",
+                "noUselessEscapeInRegex": "error",
+                "noUselessLabel": "error",
+                "noUselessLoneBlockStatements": "error",
+                "noUselessRename": "warn",
+                "noUselessStringConcat": "warn",
+                "noUselessSwitchCase": "error",
+                "noUselessTernary": "error",
+                "noUselessThisAlias": "error",
+                "noUselessTypeConstraint": "warn",
+                "noUselessUndefinedInitialization": "error",
+                "useArrowFunction": "error",
+                "useDateNow": "error",
+                "useFlatMap": "error",
+                "useLiteralKeys": "error",
+                "useNumericLiterals": "error",
+                "useOptionalChain": "error",
+                "useRegexLiterals": "warn"
+            },
+            "correctness": {
+                "noConstAssign": "error",
+                "noConstantCondition": "error",
+                "noConstructorReturn": "error",
+                "noEmptyPattern": "error",
+                "noGlobalObjectCalls": "error",
+                "noInnerDeclarations": "error",
+                "noInvalidBuiltinInstantiation": "error",
+                "noInvalidConstructorSuper": "error",
+                "noInvalidUseBeforeDeclaration": "error",
+                "noNonoctalDecimalEscape": "error",
+                "noPrecisionLoss": "error",
+                "noSelfAssign": "error",
+                "noSetterReturn": "error",
+                "noSwitchDeclarations": "error",
+                "noUndeclaredVariables": "error",
+                "noUnreachable": "error",
+                "noUnreachableSuper": "error",
+                "noUnsafeFinally": "error",
+                "noUnsafeOptionalChaining": "error",
+                "noUnusedLabels": "error",
+                "noUnusedPrivateClassMembers": "warn",
+                "noUnusedVariables": "error",
+                "useIsNan": "error",
+                "useValidForDirection": "error",
+                "useValidTypeof": "error",
+                "useYield": "error"
+            },
+            "security": {
+                "noGlobalEval": "error"
+            },
+            "suspicious": {
+                "noAssignInExpressions": "error",
+                "noAsyncPromiseExecutor": "error",
+                "noCatchAssign": "error",
+                "noClassAssign": "error",
+                "noCompareNegZero": "error",
+                "noConfusingLabels": "error",
+                "noConfusingVoidType": "error",
+                "noControlCharactersInRegex": "error",
+                "noDebugger": "error",
+                "noDocumentCookie": "error",
+                "noDoubleEquals": "error",
+                "noDuplicateCase": "error",
+                "noDuplicateClassMembers": "error",
+                "noDuplicateElseIf": "error",
+                "noDuplicateObjectKeys": "error",
+                "noDuplicateParameters": "error",
+                "noEmptyBlockStatements": "warn",
+                "noEmptyInterface": "warn",
+                "noExplicitAny": "warn",
+                "noExtraNonNullAssertion": "warn",
+                "noFallthroughSwitchClause": "error",
+                "noFunctionAssign": "error",
+                "noGlobalAssign": "error",
+                "noImportAssign": "error",
+                "noIrregularWhitespace": "error",
+                "noLabelVar": "error",
+                "noMisleadingCharacterClass": "error",
+                "noMisleadingInstantiator": "error",
+                "noOctalEscape": "error",
+                "noPrototypeBuiltins": "error",
+                "noRedeclare": "error",
+                "noSelfCompare": "error",
+                "noShadowRestrictedNames": "error",
+                "noSparseArray": "error",
+                "noTemplateCurlyInString": "error",
+                "noThenProperty": "error",
+                "noUnsafeDeclarationMerging": "error",
+                "noUnsafeNegation": "error",
+                "noVar": "error",
+                "noWith": "error",
+                "useAdjacentOverloadSignatures": "error",
+                "useAwait": "warn",
+                "useDefaultSwitchClauseLast": "warn",
+                "useErrorMessage": "error",
+                "useGetterReturn": "error",
+                "useGuardForIn": "warn",
+                "useIsArray": "error",
+                "useNamespaceKeyword": "warn",
+                "useNumberToFixedDigitsArgument": "warn"
+            },
+            "style": {
+                "noCommonJs": "error",
+                "noInferrableTypes": "error",
+                "noNamespace": "error",
+                "noNegationElse": "error",
+                "noNestedTernary": "error",
+                "noNonNullAssertion": "error",
+                "noParameterAssign": "error",
+                "noRestrictedGlobals": {
+                    "level": "error",
+                    "options": {
+                        "deniedGlobals": {
+                            "Buffer": "Import Buffer from `node:buffer` instead",
+                            "process": "Import process from `node:process` instead",
+                            "setTimeout": "Import setTimeout from `node:timers` instead",
+                            "setInterval": "Import setInterval from `node:timers` instead",
+                            "setImmediate": "Import setImmediate from `node:timers` instead",
+                            "clearTimeout": "Import clearTimeout from `node:timers` instead",
+                            "clearInterval": "Import clearInterval from `node:timers` instead",
+                            "clearImmediate": "Import clearImmediate from `node:timers` instead"
+                        }
+                    }
+                },
+                "noSubstr": "error",
+                "noUselessElse": "warn",
+                "noYodaExpression": "error",
+                "useArrayLiterals": "warn",
+                "useAsConstAssertion": "warn",
+                "useAtIndex": "warn",
+                "useBlockStatements": "error",
+                "useCollapsedElseIf": "error",
+                "useCollapsedIf": "error",
+                "useConsistentArrayType": "error",
+                "useConsistentBuiltinInstantiation": "error",
+                "useConsistentMemberAccessibility": {
+                    "level": "warn",
+                    "options": {
+                        "accessibility": "explicit"
+                    }
+                },
+                "useConst": "error",
+                "useDefaultParameterLast": "warn",
+                "useDefaultSwitchClause": "warn",
+                "useEnumInitializers": "warn",
+                "useExplicitLengthCheck": "warn",
+                "useExponentiationOperator": "warn",
+                "useExportType": "warn",
+                "useFilenamingConvention": "warn",
+                "useForOf": "warn",
+                "useImportType": {
+                    "level": "warn",
+                    "options": {
+                        "style": "inlineType"
+                    }
+                },
+                "useLiteralEnumMembers": "warn",
+                "useNamingConvention": "error",
+                "useNodejsImportProtocol": "error",
+                "useNumberNamespace": "error",
+                "useSelfClosingElements": "warn",
+                "useShorthandAssign": "warn",
+                "useShorthandFunctionType": "warn",
+                "useSingleVarDeclarator": "warn",
+                "useTemplate": "error",
+                "useThrowNewError": "error",
+                "useThrowOnlyError": "error",
+                "useTrimStartEnd": "error"
+            },
+            "nursery": {
+                "useExplicitType": "error"
+            }
+        }
+    }
+}

@@ -1,36 +1,29 @@
 {
-    "name": "template",
+    "name": "@stegripe/biomejs-config",
     "version": "1.0.0",
-    "description": "A template to generate well-configured project base for Stegripe.",
-    "license": "AGPL-3.0",
+    "description": "A BiomeJS shareable configuration package that we used in our projects.",
+    "keywords": ["linting", "formatting", "biomejs"],
+    "license": "MIT",
     "author": "Stegripe Development <support@stegripe.org>",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/stegripe/template.git"
+        "url": "git+https://github.com/stegripe/biomejs-config.git"
     },
     "bugs": {
-        "url": "https://github.com/stegripe/template/issues"
+        "url": "https://github.com/stegripe/biomejs-config/issues"
     },
-    "homepage": "https://github.com/stegripe/template#readme",
-    "main": "dist/index.js",
+    "homepage": "https://github.com/stegripe/biomejs-config#readme",
     "type": "module",
     "scripts": {
-        "build": "npm run lint && npm run compile",
-        "compile": "tsc --build tsconfig.json",
-        "lint": "eslint . --ignore-pattern .gitignore",
-        "lint:fix": "npm run lint --fix",
-        "start": "node --es-module-specifier-resolution=node .",
-        "start:dev": "rimraf ./dist && npm run compile && npm start"
+        "lint": "biome check .",
+        "lint:fix": "biome check --write .",
+        "release": "pnpm publish --access public --no-git-checks"
     },
-    "engines": {
-        "node": ">=16.6.0",
-        "npm": ">=7.0.0"
+    "exports": {
+        ".": "./biome.json"
     },
+    "files": ["biome.json"],
     "devDependencies": {
-        "@stegripe/eslint-config": "^1.0.1",
-        "@types/node": "^22.18.1",
-        "eslint": "^9.14.0",
-        "rimraf": "^6.0.1",
-        "typescript": "^5.6.3"
+        "@biomejs/biome": "^2.2.3"
     }
 }
