@@ -38,3 +38,10 @@ You can also extend specific rules by adding them to the `biome.json/biome.jsonc
         }
     }
 }
+```
+
+### Unstable Rules
+This configuration uses some rules that are still Work-in-Progress (WIP) and categorized under the [`nursery`](https://biomejs.dev/linter/#nursery).
+
+* [`nursery/noFloatingPromises`](https://biomejs.dev/linter/rules/no-floating-promises): DRequire Promise-like statements to be handled appropriately.
+* [`nursery/useExplicitType`](https://biomejs.dev/linter/rules/use-explicit-type): Enforce types in functions, methods, variables, and parameters.
