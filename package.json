@@ -1,6 +1,6 @@
 {
     "name": "@stegripe/biomejs-config",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "A BiomeJS shareable configuration package that we used in our projects.",
     "keywords": ["linting", "formatting", "biomejs"],
     "license": "MIT",
