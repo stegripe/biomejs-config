@@ -3,12 +3,12 @@ name: Lint code
 on:
   push:
     branches:
-      - main
+      - "**"
   pull_request:
     branches:
       - "**"
+  workflow_dispatch:
 
 jobs:
   lint:
-    uses: stegripe/workflows/.github/workflows/pnpm-lint.yaml@main
-    secrets: inherit
+    uses: stegripe/workflows/.github/workflows/pnpm-lint.yaml@fcfd6bae08c7afa0a213fae4584a8667f0214688 # main
