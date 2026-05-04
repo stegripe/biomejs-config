@@ -2,6 +2,7 @@
 > A BiomeJS [shareable configuration](https://biomejs.dev/) package that we used in our projects.
 
 <div align="center">
+  <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/"><img src="https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-orange.svg" alt="License: CC BY-NC-ND 4.0"></a>
 <a href="https://www.npmjs.com/package/@stegripe/biomejs-config">
   <img src="https://img.shields.io/npm/v/@stegripe/biomejs-config?maxAge=3600" alt="npm version" ></a>
   <img src="https://img.shields.io/npm/dt/@stegripe/biomejs-config?maxAge=3600" alt="npm downloads">
