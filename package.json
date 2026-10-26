@@ -2,11 +2,7 @@
     "name": "@stegripe/biomejs-config",
     "version": "1.1.0",
     "description": "A BiomeJS shareable configuration package that we used in our projects.",
-    "keywords": [
-        "linting",
-        "formatting",
-        "biomejs"
-    ],
+    "keywords": ["linting", "formatting", "biomejs"],
     "license": "CC-BY-NC-ND-4.0",
     "author": "Stegripe Development <support@stegripe.org>",
     "repository": {
@@ -26,9 +22,7 @@
     "exports": {
         ".": "./biome.json"
     },
-    "files": [
-        "biome.json"
-    ],
+    "files": ["biome.json"],
     "devDependencies": {
         "@biomejs/biome": "^2.6.3"
     }
